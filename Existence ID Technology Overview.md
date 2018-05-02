@@ -1,11 +1,14 @@
 # Existence ID Technology Overview
 
+
 ## What does Existence ID Deliver?
 
 Existence ID delivers two distinct product lines.
 
 
 ### For end users.
+
+
 
 *   A free and unencumbered application (versioned for both mobile and desktop environments) that provides structured private storage for government-issued and other document types that can be used to establish a proof of identity when dealing with third parties.
 *   A premium product line that augments fundamental document storage to provide a 'Drop-Box' style environment as a highly secure repository for a lifetime of personal records and memorabilia.  
@@ -17,6 +20,8 @@ A set of documentation and example code to facilitate the integration, giving Ex
 
 
 ## Fundamental requirements
+
+
 
 *   The interface prioritises simplicity and ease of use. 
 *   Internally, the application is optimised for the storage and organisation of identity-related information.
@@ -40,7 +45,7 @@ The most common contribution that a blockchain can make here is by notarising th
 
 Conventionally stored data can of course be protected through encryption involving the creation and management of cryptographic keys, (often using public key infrastructure). Although such approaches are considered best practice, experience demonstrates how even the most hardened of systems can be penetrated. Blockchain transactions can be used to provide the binding between a public key and an owner, thus removing the certificate authority from the picture. For more information. See the section, [Blockchain-based PKI](https://en.wikipedia.org/wiki/Public_key_infrastructure) at Wikipedia.
 
-While we can see that blockchain technology can contribute in some ways to the integrity of conventionally stored data sets, other properties of blockchain networks need to be considered. If the hybrid model described above is adopted, then the most problematic factor beyond data integrity becomes write speed, ie, having created a record in the database, the notarisation of the data state and creation of a key pair set will be dependent upon the block speed of the chosen network, which in the case of bitcoin is approximately ten minutes. Not only is this slow, it is indeterminate. Further, if the data is critical, then the number of confirmations becomes a factor which could lead to effective write times of hours in some cases. While this may be acceptable for some specific types of applications, it certainly doesn't provide a generalised data storage solution. This will explain why, despite the hype, there are still no blockchain-database hybrid solutions in practical, widespread use today.
+While we can see that blockchain technology can contribute in some ways to the integrity of conventionally stored data sets, other properties of blockchain networks need to be considered. If the hybrid model described above is adopted, then the most problematic factor beyond data integrity becomes write speed, ie, having created a record in the database, the notarisation of the data state and creation of a key pair set will be dependent upon the block speed of the chosen network, which in the case of bitcoin is approximately ten minutes. Not only is this slow, it is indeterminate. Further, if the data is critical, then the number of confirmations becomes a factor which could lead to effective write times of an hour in some cases. While this may be acceptable for some specific types of applications, it certainly doesn't provide a generalised data storage solution. This will explain why, despite the hype, there are still no blockchain-database hybrid solutions in practical, widespread use today.
 
 
 ### Where we <span style="text-decoration:underline;">are</span> using blockchain.
@@ -61,7 +66,3 @@ The SAFE Network was conceived at the outset as a data store to ensure that indi
 #### The coding environment
 
 The SAFE Network is being developed in a system-level language known as [Rust](https://www.rust-lang.org). Rust is a modern, compiled language with some very important properties that make it impossible to access unsafe memory at run-time. Rust was chosen for this project because experienced coders can produce very robust, efficient code. We also look forward to making code contributions to the open-source [SAFE Network](https://github.com/maidsafe) project, and this will be more likely if we are coding in the same language as the project.
-
-
-<!-- GD2md-html version 1.0β11 -->
-
